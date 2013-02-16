@@ -18,6 +18,10 @@
 		2904467716AC1D8900819043 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2904467616AC1D8900819043 /* Default-568h@2x.png */; };
 		2904467A16AC1D8900819043 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2904467816AC1D8900819043 /* MainStoryboard.storyboard */; };
 		2904467D16AC1D8900819043 /* CostCntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2904467C16AC1D8900819043 /* CostCntViewController.m */; };
+		2904468416AC2E4900819043 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2904468316AC2E4900819043 /* QuartzCore.framework */; };
+		291F2F8616CD359500AE9FA6 /* PertnerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F2F8516CD359500AE9FA6 /* PertnerDetailsViewController.m */; };
+		2934C6DA16C5476300A1B602 /* PertnersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C6D916C5476300A1B602 /* PertnersViewController.m */; };
+		2934C6DD16C5487800A1B602 /* Pertner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C6DC16C5487800A1B602 /* Pertner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		2904467916AC1D8900819043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2904467B16AC1D8900819043 /* CostCntViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostCntViewController.h; sourceTree = "<group>"; };
 		2904467C16AC1D8900819043 /* CostCntViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostCntViewController.m; sourceTree = "<group>"; };
+		2904468316AC2E4900819043 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		291F2F8416CD359500AE9FA6 /* PertnerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PertnerDetailsViewController.h; sourceTree = "<group>"; };
+		291F2F8516CD359500AE9FA6 /* PertnerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PertnerDetailsViewController.m; sourceTree = "<group>"; };
+		2934C6D816C5476300A1B602 /* PertnersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PertnersViewController.h; sourceTree = "<group>"; };
+		2934C6D916C5476300A1B602 /* PertnersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PertnersViewController.m; sourceTree = "<group>"; };
+		2934C6DB16C5487800A1B602 /* Pertner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pertner.h; sourceTree = "<group>"; };
+		2934C6DC16C5487800A1B602 /* Pertner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pertner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2904468416AC2E4900819043 /* QuartzCore.framework in Frameworks */,
 				2904466116AC1D8900819043 /* UIKit.framework in Frameworks */,
 				2904466316AC1D8900819043 /* Foundation.framework in Frameworks */,
 				2904466516AC1D8900819043 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +85,7 @@
 		2904465F16AC1D8900819043 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2904468316AC2E4900819043 /* QuartzCore.framework */,
 				2904466016AC1D8900819043 /* UIKit.framework */,
 				2904466216AC1D8900819043 /* Foundation.framework */,
 				2904466416AC1D8900819043 /* CoreGraphics.framework */,
@@ -89,6 +102,12 @@
 				2904467B16AC1D8900819043 /* CostCntViewController.h */,
 				2904467C16AC1D8900819043 /* CostCntViewController.m */,
 				2904466716AC1D8900819043 /* Supporting Files */,
+				2934C6D816C5476300A1B602 /* PertnersViewController.h */,
+				2934C6D916C5476300A1B602 /* PertnersViewController.m */,
+				2934C6DB16C5487800A1B602 /* Pertner.h */,
+				2934C6DC16C5487800A1B602 /* Pertner.m */,
+				291F2F8416CD359500AE9FA6 /* PertnerDetailsViewController.h */,
+				291F2F8516CD359500AE9FA6 /* PertnerDetailsViewController.m */,
 			);
 			path = CostCounter;
 			sourceTree = "<group>";
@@ -177,6 +196,9 @@
 				2904466D16AC1D8900819043 /* main.m in Sources */,
 				2904467116AC1D8900819043 /* CostCntAppDelegate.m in Sources */,
 				2904467D16AC1D8900819043 /* CostCntViewController.m in Sources */,
+				2934C6DA16C5476300A1B602 /* PertnersViewController.m in Sources */,
+				2934C6DD16C5487800A1B602 /* Pertner.m in Sources */,
+				291F2F8616CD359500AE9FA6 /* PertnerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +245,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -243,7 +265,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -256,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CostCounter/CostCounter-Prefix.pch";
 				INFOPLIST_FILE = "CostCounter/CostCounter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CostCounter/CostCounter-Prefix.pch";
 				INFOPLIST_FILE = "CostCounter/CostCounter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +315,7 @@
 				2904468216AC1D8900819043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

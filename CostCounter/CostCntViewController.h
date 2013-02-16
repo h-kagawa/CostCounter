@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface CostCntViewController : UIViewController
-
+@property (retain, nonatomic) IBOutlet UILabel *Counter;
+@property (nonatomic, strong) NSMutableArray *pertners;
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "CostCntAppDelegate.h"
+#import "Pertner.h"
+#import "CostCntViewController.h"
 
 @implementation CostCntAppDelegate
+NSMutableArray *pertners;
 
 - (void)dealloc
 {
@@ -19,6 +22,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    pertners = [NSMutableArray arrayWithCapacity:20];
+    Pertner *pertner = [[Pertner alloc] init];
+    pertner.name = @"Bill Evans";
+    pertner.company = @"Tic-Tac-Toe";
+    pertner.cost = 4;
+    [pertners addObject:pertner];
+    pertner = [[Pertner alloc] init];
+    pertner.name = @"Oscar Peterson";
+    pertner.company = @"Spin the Bottle";
+    pertner.cost = 5;
+    [pertners addObject:pertner];
+    pertner = [[Pertner alloc] init];
+    pertner.name = @"Dave Brubeck";
+    pertner.company = @"Texas Hold’em Poker";
+    pertner.cost = 2;
+    [pertners addObject:pertner];
+     
+    UINavigationController *navigationController =
+    (UINavigationController *)self.window.rootViewController;
+    
+    CostCntViewController *costcntViewController =
+    [[navigationController viewControllers] objectAtIndex:0];
+    costcntViewController.pertners = pertners;
+    
+    /*
+    NSString* viewIdentifier = @"PertnersView";
+    UIStoryboard* sb = [[[self window] rootViewController] storyboard];
+    PertnersViewController *pertnersViewController =
+    [[PertnersViewController alloc] init];
+    pertnersViewController = 
+    [sb instantiateViewControllerWithIdentifier:viewIdentifier];
+    
+    pertnersViewController.pertners = pertners;
+     */
+    
     return YES;
 }
 							
